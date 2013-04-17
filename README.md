@@ -49,7 +49,7 @@ Openlayers, Javascript code for feature identictaion.
           
            var ele_ntwrk = new OpenLayers.Layer.WMS(
                "Electrical_asset",
-               "http://192.168.0.96:8080/geoserver/Electricalasset/wms",
+               "http://localhost:8080/geoserver/Electricalasset/wms",
                { layers: "Network1" }
            );
              
@@ -69,7 +69,7 @@ Openlayers, Javascript code for feature identictaion.
                // set the protocol for the featureinfo request    
 
               var info = new OpenLayers.Control.WMSGetFeatureInfo({
-               url: 'http://192.168.0.96:8080/geoserver/Electricalasset/wms',
+               url: 'http://localhost:8080/geoserver/Electricalasset/wms',
                title: 'Identify features by clicking',
                queryVisible: true,
                INFO_FORMAT: 'application/vnd.ogc.gml',             
